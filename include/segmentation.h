@@ -8,5 +8,6 @@ struct gdt {
 
 
 void load_lgdt(struct gdt *gdt);
+void init();
 
 #endif //OS_INCLUDE_SEGMENTATION_H

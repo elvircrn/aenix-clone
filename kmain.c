@@ -22,8 +22,11 @@ void demo1() {
 
 void demo_segmentation() {
   struct gdt _gdt;
+  _gdt.size = 100;
+  _gdt.address = 0;
   load_lgdt(&_gdt);
   console_print_number(_gdt.address);
+  console_print_str(" ");
   console_print_number(_gdt.size);
 }
 
