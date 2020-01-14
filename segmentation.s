@@ -5,12 +5,12 @@ load_lgdt:
     lgdt [eax]
     ret
 
-global init
+global init_lgdt
 
-init:
-    mov cs, 0x10
-    mov ss, 0x10
-    mov ds, 0x10
-    mov es, 0x10
-    mov gs, 0x10
-    mov fs, 0x10
+init_lgdt:
+    mov ax, 0x10
+    mov ss, ax
+    mov ds, ax
+    mov es, ax
+    mov gs, ax
+    mov fs, ax

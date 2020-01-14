@@ -32,6 +32,6 @@ void demo_segmentation() {
 
 int main() {
   serial_configure(SERIAL_COM1_BASE);
-  demo_segmentation();
+  demo1();
   return 0;
 }
